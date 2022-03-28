@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Flex Containers</title>
+<style>
+body {
+font-family:verdana;
+}
+
+ h2:not(:first-child) {
+padding-top:72px;
+}
+.flexChild {
+background-color:lavender;
+border: 2px solid grey;
+box-sizing: border-box;
+font-size: 24px;
+font-weight:bold;
+height:50px;
+margin:10px;
+padding: 8px 14px;
+width: 50px;
+}
+
+ .flexcon1 {
+text-align:center;
+width:300px;
+display: flex;
+flex-direction: row;
+justify-content:flex-end;
+}
+
+ .flexcon2 {
+height: 100px;
+display: flex;
+align-items: center;
+flex-wrap:nowrap;
+}
+
+ .flexcon3 {
+height: 200px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.flexcon4 {
+  width:200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+}
+
+ .flexContainer {
+background-color: darksalmon;
+border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+ <div class="flexContainer">
+<div class="flexChild flexcon1">A</div>
+<div class="flexChild flexcon2">B</div>
+<div class="flexChild flexcon3">C</div>
+<div class="flexChild flexcon4">D</div>
+</div>
+</body>
+</html>
