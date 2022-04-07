@@ -7,6 +7,11 @@
 body {
 font-family:verdana;
 }
+.flexContainer {
+background-color: darksalmon;
+border-radius: 4px;
+display: flex;
+}
 
  h2:not(:first-child) {
 padding-top:72px;
@@ -23,48 +28,60 @@ padding: 8px 14px;
 width: 50px;
 }
 
- .flexcon1 {
-text-align:center;
-width:300px;
-display: flex;
-flex-direction: row;
-justify-content:flex-end;
+.container1 {
+  flex-direction: column;
 }
 
- .flexcon2 {
-height: 100px;
-display: flex;
-align-items: center;
-flex-wrap:nowrap;
-}
-
- .flexcon3 {
-height: 200px;
-display: flex;
-justify-content: center;
-flex-direction: column;
-}
-
-.flexcon4 {
-  width:200px;
-  display: flex;
+.container2 {
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content:flex-end;
 }
 
- .flexContainer {
-background-color: darksalmon;
-border-radius: 4px;
+.container2 .flexChild {
+  width:250px;
 }
+
+.container3 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container4 {
+  flex-direction: row;
+  height:300px;
+  align-items: flex-end;
+}
+
 </style>
 </head>
 <body>
-
- <div class="flexContainer">
-<div class="flexChild flexcon1">A</div>
-<div class="flexChild flexcon2">B</div>
-<div class="flexChild flexcon3">C</div>
-<div class="flexChild flexcon4">D</div>
+  <h3>Flexbox 1 </h3>
+  <div class="flexContainer container1">
+ <div class="flexChild">A</div>
+ <div class="flexChild">B</div>
+ <div class="flexChild">C</div>
+ <div class="flexChild">D</div>
 </div>
+<h3>Flexbox 2 </h3>
+ <div class="flexContainer container2">
+ <div class="flexChild">A</div>
+ <div class="flexChild">B</div>
+ <div class="flexChild">C</div>
+ <div class="flexChild">D</div>
+</div>
+<h3>Flexbox 3</h3>
+ <div class="flexContainer container3">
+ <div class="flexChild">A</div>
+ <div class="flexChild">B</div>
+ <div class="flexChild">C</div>
+ <div class="flexChild">D</div>
+</div>
+<h3>Flexbox 4</h3>
+<div class="flexContainer container4">
+ <div class="flexChild">A</div>
+ <div class="flexChild">B</div>
+ <div class="flexChild">C</div>
+ <div class="flexChild">D</div>
+ </div>
 </body>
 </html>
